@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <title>Instagram Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main">
+    <div class="forms">
+      <center><img src="insta_logo.png" alt="logo"></center>
+      <h1>Search Instagram Accounts</h1>
+      <div id="search-section">
+        <input type="text" id="search-input" placeholder="Enter Name or Category" />
+        <button id="search-button">Search</button>
+      </div>
+      <div id="output-section">
+        <p id="search-result"></p>
+        <center>
+        <table id="accounts-table" style="display:none;">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Followers</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </center>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
